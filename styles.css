@@ -23,15 +23,17 @@ h1 {
 }
 
 .container-input {
+    position: relative;
     display: flex;
     margin-top: 48px;
     opacity: 20%;
     color: #fff;
+    width: 634px;
+    height: 74px;
 }
 
 .container-input input {
-    width: 634px;
-    height: 74px;
+    width: 100%;
     padding: 26px 24px;
     border-radius: 8px;
     border: none;
@@ -39,17 +41,17 @@ h1 {
     outline: none;
 }
 
+#lupa {
+    position: absolute;
+    left: 600px;
+    top: 28px;
+}
+
 ::placeholder {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 500;
     color: #8A8A8A;
     line-height: normal;
-}
-
-#lupa {
-    position: absolute;
-    margin-top: 28px;
-    left: 964px;
 }
 
 .container-favoritos {
@@ -85,47 +87,52 @@ h1 {
 }
 
 .frame {
+    position: absolute;
+    display: flex;
     width: 204px;
     height: 153px;
-    margin: 24px auto 38px 46px;
-    border: 1px solid green;
+    left: 14px;
+    top: 24px;
+    border: 1px solid yellow;
 }
 
 .image {
+    margin: auto;
     width: 139px;
     height: 139px;
     background-image: url(61a31a31b562cf155400a3f17676e54f.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 800px;
+    border: 1px solid purple;
 }
 
 .titulo {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 268px;
     color: #fff;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
+    left: 249px;
+    border: 1px solid blue;
 }
 
 .sub-titulo {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-top: 24px;
 }
 
-.batman {
-}
-
 .descricao {
+    position: absolute;
     width: 592px;
     font-family: 'Kumbh Sans', sans-serif;
     color: #ACACAC;
     font-size: 18px;
     font-weight: 500;
     line-height: 177%;
-    margin-right: 37px;
+    right: 37px;
 }
