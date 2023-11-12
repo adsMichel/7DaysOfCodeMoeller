@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,24 +6,126 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #17162E;
 }
 
 h1 {
-    position: relative;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     color: #fff;
-    top: 62px;
-    left: 579px;
+    margin-top: 62px;
 }
 
-input {
+.container-input {
+    display: flex;
+    margin-top: 48px;
+    opacity: 20%;
+    color: #fff;
+}
+
+.container-input input {
     width: 634px;
     height: 74px;
-    top: 155px;
-    left: 403px;
+    padding: 26px 24px;
     border-radius: 8px;
-    opacity: 20%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+::placeholder {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 500;
+    color: #8A8A8A;
+    line-height: normal;
+}
+
+#lupa {
+    position: absolute;
+    margin-top: 28px;
+    left: 964px;
+}
+
+.container-favoritos {
+    display: inline-flex;
+    margin-top: 30px;
+    gap: 11px;
+}
+
+.container-favoritos input {
+    background-color: #706EA8;
+    color: #706EA8;
+    border-radius: 4px;
+}
+
+.container-favoritos h3 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+}
+
+.movie {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1224px;
+    height: 201px;
+    background-color: #1D1C3B;
+    margin-top: 64px;
+    border-radius: 4px;
+}
+
+.frame {
+    width: 204px;
+    height: 153px;
+    margin: 24px auto 38px 46px;
+    border: 1px solid green;
+}
+
+.image {
+    width: 139px;
+    height: 139px;
+    background-image: url(61a31a31b562cf155400a3f17676e54f.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 800px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sub-titulo {
+    display: flex;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.batman {
+}
+
+.descricao {
+    width: 592px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #ACACAC;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177%;
+    margin-right: 37px;
 }
